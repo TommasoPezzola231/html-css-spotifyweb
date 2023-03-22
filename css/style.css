@@ -43,6 +43,7 @@ button {
     color: white;
     padding: 0.5rem 2rem;
     font-size: 10px;
+    margin-right: 1.5rem;
 }
 
 ul {
@@ -65,7 +66,7 @@ ul {
 }
 
 .utilities {
-    background-color: #080b12;
+    background-color: #141922;
     color: gray;
     width: calc((100% / 3) * 2);
     height: calc(100vh - 90px);
@@ -136,7 +137,7 @@ img[alt=Simbolo] {
     }
 }
 
-/******Desktop*******/
+/******Tablet*******/
 @media  screen and (min-width: 780px) {
     .menu {
         max-width: 220px;
@@ -155,10 +156,11 @@ img[alt=Simbolo] {
     top: 0;
     right: 0;
     width: calc((100% / 3) * 2);
+    background-color: rgba(0, 0, 0, 0.418);
 }
 
 nav {
-    margin-top: 62px;
+    margin-top: 5rem;
     font-size: 10px;
     font-weight: 700;
     gap: 1rem;
@@ -206,6 +208,9 @@ h2 {
     .menuNav {
         width: calc(100% / 4 - 1rem);
     } 
+    .upgrade {
+        width: 90%;
+    }
 }
 
 /*****Layout Tablet******/
@@ -215,6 +220,9 @@ h2 {
     }
     .menuNav {
         width: calc(100% / 5 - 1rem);
+    }
+    .upgrade {
+        width: calc(100vw - 220px);
     }
 }
 
