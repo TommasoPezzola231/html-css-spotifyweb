@@ -16,8 +16,16 @@
     flex-direction: column;
 }
 
+.flexWrap {
+    flex-wrap: wrap;
+}
+
 .justifyContentC {
-    justify-content: end;
+    justify-content: center;
+}
+
+.justifyContentSA {
+    justify-content: space-around;
 }
 
 .alignItemsC {
@@ -139,6 +147,54 @@ img[alt=Simbolo] {
     text-align: end;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: calc((100% / 3) * 2);
+}
+
+nav {
+    margin-top: 62px;
+    font-size: 10px;
+    font-weight: 700;
+    gap: 1rem;
+}
+
+.menuNav {
+    width: calc(100% / 3 - 1rem);
+}
+
+.all {
+    overflow-y: auto;
+}
+
+h2 {
+    color: white;
+    font-size: 20px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.played {
+    gap: 1rem;
+}
+
+.card {
+    width: calc(100% / 2 - 1rem);
+    text-align: center;
+}
+
+.card > h3 {
+    color: white;
+    font-size: 16px;
+}
+
+.copertina {
+    width: 100%;
+}
+
+.copertina > img {
+    width: 100%;
 }
 
 /*****Footer*******/
@@ -148,4 +204,5 @@ footer {
     height: 90px;
     width: 100vw;
     max-width: 100%;
+    z-index: 100;
 }
