@@ -31,6 +31,15 @@
     width: calc((100% / 3) * 2);
 }
 
+button {
+    background-color: #080b12;
+    border-radius: 40px;
+    border: 2px solid white;
+    color: white;
+    padding: 0.5rem 2rem;
+    font-size: 10px;
+}
+
 /*******Main*********/
 
 /******Menu********/
@@ -42,7 +51,7 @@
 }
 
 .utilities {
-    background-color: #141922;
+    background-color: #080b12;
     color: gray;
 }
 
@@ -55,4 +64,21 @@
 
 img[alt=Simbolo] {
     width: 1.5rem;
+}
+
+.upgrade {
+    text-align: end;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/*****Footer*******/
+footer {
+    background-color: #282828;
+    color: white;
+    height: 90px;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    max-width: 100%;
 }
