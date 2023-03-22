@@ -32,6 +32,9 @@
     align-items: center;
 }
 
+.gap1 {
+    gap: 1rem;
+}
 
 button {
     background-color: #080b12;
@@ -66,6 +69,7 @@ ul {
     color: gray;
     width: calc((100% / 3) * 2);
     height: calc(100vh - 90px);
+    overflow-y: auto;
 }
 
 .playlist {
@@ -164,19 +168,11 @@ nav {
     width: calc(100% / 3 - 1rem);
 }
 
-.all {
-    overflow-y: auto;
-}
-
 h2 {
     color: white;
     font-size: 20px;
     margin-top: 2rem;
     margin-bottom: 1rem;
-}
-
-.played {
-    gap: 1rem;
 }
 
 .card {
@@ -195,6 +191,41 @@ h2 {
 
 .copertina > img {
     width: 100%;
+}
+
+.all  h5 {
+    margin-bottom: 2rem;
+}
+
+.rotonda {
+    border-radius: 50%;
+}
+
+/*********Layout Xs********/
+@media  screen and (max-width: 550px) {
+    .menuNav {
+        width: calc(100% / 4 - 1rem);
+    } 
+}
+
+/*****Layout Tablet******/
+@media screen and (min-width: 780px) {
+    .card {
+        width: calc(100% / 4 - 1rem);
+    }
+    .menuNav {
+        width: calc(100% / 5 - 1rem);
+    }
+}
+
+/*****Layout Desktop******/
+@media screen and (min-width: 1180px) {
+    .card {
+        width: calc(100% / 6 - 1rem);
+    }
+    .menuNav {
+        width: calc(100% / 11);
+    }
 }
 
 /*****Footer*******/
