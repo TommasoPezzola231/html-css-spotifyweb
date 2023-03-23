@@ -109,6 +109,7 @@ ul {
     font-size: 10px;
     width: 220px;
     font-size: 15px;
+    padding-left: 1rem;
 }
 
 .utilities {
@@ -182,13 +183,20 @@ img[alt=Simbolo] {
 @media  screen and (max-width: 550px) {
     .logoXs {
         display: block;
-        max-width: 100%;
+        max-width: 50%;
+        margin-left: 0.75rem;
+        margin-bottom: 0.25rem;
+    }
+    img[alt=Simbolo] {
+        width: 1.5rem;
+        margin: 0.25rem 0.75rem;
     }
     .logo {
-        margin-right: 1rem;
+        margin: 0;
     }
     .menu {
         width: 3rem;
+        padding: 0;
     }
     .utilities {
         width: calc(100% - 3rem);
@@ -208,6 +216,7 @@ img[alt=Simbolo] {
     right: 0;
     width: calc(100% - 220px);
     background-color: rgba(0, 0, 0, 0.418);
+    z-index: 999;
 }
 
 nav {
@@ -266,7 +275,7 @@ h2 {
         width: calc(100% / 4 - 1rem);
     } 
     .upgrade {
-        width: 90%;
+        width: calc(100% - 3rem);
     }
 }
 
