@@ -257,17 +257,18 @@ footer {
 }
 
 .square {
-    width: 30%;
     height: 90px;
 }
 
 .canzoneRiproduzione {
-    width: 25%;
+    width: 40%;
 }
 
 .canzoneRiproduzione > img {
     width: 100%;
     padding: 0.5rem;
+    max-width: 5rem;
+    min-width: 2rem;
 }
 
 .nomeBranoRiproduzione {
@@ -286,13 +287,12 @@ footer {
 }
 
 .preferiti {
-    width: 25%;
+    width: 10%;
     color: gray;
 }
 
-.controlliUI {
-    width: 100%;
-    justify-content: space-around;
+.controlliUI > i {
+    margin: 1rem;
 }
 
 .time {
@@ -306,6 +306,7 @@ footer {
 
 .barTime {
     width: 75%;
+    max-width: 33rem;
     height: 5px;
     border-radius: 5px;
     background-color: gray;
@@ -320,19 +321,51 @@ footer {
 
 .audio > i {
     font-size: 14px;
-    margin: 0.5rem;
+    margin: 0.1rem;
 }
 
 .barVol {
-    width: 50%;
+    width: 3rem;
+    max-width: 9rem;
     height: 5px;
     border-radius: 5px;
     background-color: gray;
+    margin-right: 0.5rem;
 }
 
 .barVol2 {
-    width: 10%;
+    width: 0.5rem;
     height: 5px;
     border-radius: 5px;
     background-color: lightgray;
+}
+
+/********Layout Xs***********/
+@media  screen and (max-width: 550px) {
+    .controlliUI > i {
+        margin: 0.5rem;
+    }
+    .barVol {
+        width: 2rem;
+    }
+    .barVol2 {
+        width: 0.5rem;
+    }
+}
+
+/*****Layout Tablet******/
+@media screen and (min-width: 780px) {
+    .controlliUI > i {
+        margin: 1rem 2rem;
+        font-size: 20px;
+    }
+    .barVol {
+        width: 5rem;
+    }
+    .barVol2 {
+        width: 2remrem;
+    }
+    .audio > i {
+        margin: 0.5rem;
+    }
 }
