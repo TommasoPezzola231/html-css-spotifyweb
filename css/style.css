@@ -32,6 +32,20 @@
     justify-content: space-between;
 }
 
+.positionAbsolute {
+    position: absolute;
+}
+
+.positionRelative {
+    position: relative;
+}
+
+.center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .alignItemsC {
     align-items: center;
 }
@@ -48,6 +62,7 @@ button {
     padding: 0.5rem 2rem;
     font-size: 10px;
     margin-right: 1.5rem;
+    cursor: pointer;
 }
 
 ul {
@@ -57,6 +72,32 @@ ul {
 .textAlignC {
     text-align: center;
 }
+
+/********Hover********/
+.menuNav:hover {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: #adff2f;
+    cursor: pointer;
+}
+
+.hover:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.card:hover .copertina {
+    filter: brightness(0.5);
+}
+
+.card:hover .copertina > i {
+    display: block;
+}
+
 /*******Main*********/
 
 /******Menu********/
@@ -203,6 +244,12 @@ h2 {
 
 .copertina > img {
     width: 100%;
+}
+
+.copertina > i {
+    color: white;
+    font-size: 40px;
+    display: none;
 }
 
 .all  h5 {
