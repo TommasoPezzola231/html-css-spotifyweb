@@ -90,7 +90,7 @@ ul {
     cursor: pointer;
 }
 
-.card:hover .copertina {
+.card:hover .copertina > img {
     filter: brightness(0.5);
 }
 
