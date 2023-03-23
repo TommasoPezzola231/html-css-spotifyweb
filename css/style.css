@@ -28,6 +28,10 @@
     justify-content: space-around;
 }
 
+.justifyContentSB {
+    justify-content: space-between;
+}
+
 .alignItemsC {
     align-items: center;
 }
@@ -62,19 +66,26 @@ ul {
     padding-left: 1rem;
     height: calc(100vh - 90px);
     font-size: 10px;
-    width: calc(100% / 3);
+    width: 220px;
+    font-size: 15px;
 }
 
 .utilities {
     background-color: #141922;
     color: gray;
-    width: calc((100% / 3) * 2);
+    width: calc(100% - 220px);
     height: calc(100vh - 90px);
     overflow-y: auto;
 }
 
+.all {
+    padding-bottom: 3rem;
+    padding-left: 1rem;
+}
+
 .playlist {
     height: 100%;
+    overflow-y: auto;
 }
 
 .playlist > h5 {
@@ -106,6 +117,10 @@ li {
     margin-right: 3rem;
 }
 
+img ~ p {
+    margin-left: 1rem;
+}
+
 .logoXs {
     display: none;
 }
@@ -117,6 +132,11 @@ img[alt=Simbolo] {
 .account {
     margin-top: auto;
 }
+
+.profilo {
+    background-color: gray;
+    border-radius: 50%;
+}
 /*********Layout Xs********/
 @media  screen and (max-width: 550px) {
     .logoXs {
@@ -127,23 +147,13 @@ img[alt=Simbolo] {
         margin-right: 1rem;
     }
     .menu {
-        width: 10%;
+        width: 3rem;
     }
     .utilities {
-        width: 90%;
+        width: calc(100% - 3rem);
     }
     .none {
         display: none;
-    }
-}
-
-/******Tablet*******/
-@media  screen and (min-width: 780px) {
-    .menu {
-        max-width: 220px;
-    }
-    .utilities {
-        width: calc(100vw - 220px);
     }
 }
 
@@ -155,7 +165,7 @@ img[alt=Simbolo] {
     position: fixed;
     top: 0;
     right: 0;
-    width: calc((100% / 3) * 2);
+    width: calc(100% - 220px);
     background-color: rgba(0, 0, 0, 0.418);
 }
 
@@ -244,4 +254,85 @@ footer {
     width: 100vw;
     max-width: 100%;
     z-index: 100;
+}
+
+.square {
+    width: 30%;
+    height: 90px;
+}
+
+.canzoneRiproduzione {
+    width: 25%;
+}
+
+.canzoneRiproduzione > img {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.nomeBranoRiproduzione {
+    width: 50%;
+}
+
+.nomeBranoRiproduzione > h2 {
+    font-size: 14px;
+    margin: 0;
+}
+
+.nomeBranoRiproduzione > small {
+    color: gray;
+    font-size: 10px;
+    margin: 0;
+}
+
+.preferiti {
+    width: 25%;
+    color: gray;
+}
+
+.controlliUI {
+    width: 100%;
+    justify-content: space-around;
+}
+
+.time {
+    width: 100%;
+}
+
+.time > h5 {
+    font-size: 9px;
+    margin: 0.5rem;
+}
+
+.barTime {
+    width: 75%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: gray;
+}
+
+.barTime2 {
+    width: 20%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: lightgray;
+}
+
+.audio > i {
+    font-size: 14px;
+    margin: 0.5rem;
+}
+
+.barVol {
+    width: 50%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: gray;
+}
+
+.barVol2 {
+    width: 10%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: lightgray;
 }

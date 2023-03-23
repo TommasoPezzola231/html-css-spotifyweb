@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Spotify-Web</title>
 </head>
@@ -54,9 +55,9 @@
                                 <p class="none">Installa App</p>
                             </div>
                         </div>
-                        <hr>
+                        <hr class="none">
                         <div class="profile flex alignItemsC">
-                            <img src="./img/profile.svg" alt="Simbolo">
+                            <img class="profilo" src="./img/profile.svg" alt="Simbolo">
                             <p class="none">John Doe</p>
                         </div>
                     </div>
@@ -179,7 +180,47 @@
     </main>
 
     <!--Footer Fixed-->
-    <footer></footer>
+    <footer>
+        <div class="flex justifyContentSB alignItemsC">
+            <div class="square flex alignItemsC">
+                <div class="canzoneRiproduzione">
+                    <img src="./img/sinister.jpeg" alt="">
+                </div>
+                <div class="flexColumn nomeBranoRiproduzione">
+                    <h2>Sinister</h2>
+                    <small>BRANO NOME</small>
+                </div>
+                <div class="flexColumn preferiti">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-folder"></i>
+                </div>
+            </div>
+            <div class="square flexColumn alignItemsC justifyContentC">
+                <div class="controlliUI flex">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward"></i>
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-solid fa-forward"></i>
+                    <i class="fa-solid fa-rotate-right"></i>
+                </div>
+                <div class="time flex justifyContentC alignItemsC">
+                    <h5>0:25</h5>
+                    <div class="barTime">
+                        <div class="barTime2"></div>
+                    </div>
+                    <h5>4:35</h5>
+                </div>
+            </div>
+            <div class="square audio flex alignItemsC justifyContentC">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-desktop"></i>
+                <i class="fa-solid fa-volume-high"></i>
+                <div class="barVol">
+                    <div class="barVol2"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
     
 </body>
 </html>
