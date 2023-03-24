@@ -74,11 +74,24 @@ ul {
 }
 
 /********Hover********/
+.navBar {
+    display: none;
+    width: 30%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #adff2f;
+    height: 2px;
+    border-radius: 1px;
+}
+
 .menuNav:hover {
     color: white;
-    text-decoration: underline;
-    text-decoration-color: #adff2f;
     cursor: pointer;
+}
+
+.menuNav:hover .navBar {
+    display: block;
 }
 
 .hover:hover {
