@@ -111,6 +111,24 @@ ul {
     display: block;
 }
 
+.barTime:hover .barTime2 {
+    background-color: #adff2f;
+}
+
+.barTime:hover .levelTime {
+    display: block;
+    cursor: pointer;
+}
+
+.barVol:hover .barVol2 {
+    background-color: #adff2f;
+}
+
+.barVol:hover .levelSound {
+    display: block;
+    cursor: pointer;
+}
+
 /*******Main*********/
 
 /******Menu********/
@@ -388,6 +406,18 @@ footer {
     background-color: lightgray;
 }
 
+.levelTime {
+    display: none;
+    width: 9px;
+    height: 9px;
+    background-color: white;
+    border-radius: 100%;
+    position: relative;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+}
+
 .audio > i {
     font-size: 14px;
     margin: 0.1rem;
@@ -407,6 +437,18 @@ footer {
     height: 5px;
     border-radius: 5px;
     background-color: lightgray;
+}
+
+.levelSound {
+    display: none;
+    width: 9px;
+    height: 9px;
+    background-color: white;
+    border-radius: 100%;
+    position: relative;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
 }
 
 /********Layout Xs***********/
